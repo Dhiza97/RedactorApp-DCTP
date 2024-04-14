@@ -6,9 +6,22 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('/redact-bg.jpg') no-repeat;
-    object-fit: contain;
+    background: linear-gradient(295deg,#1018c7,#3a5e8c,midnightblue);
+    background-size: 240% 240%;
+    animation: gradient-animation 4s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .main-container {
     width: 90%;
