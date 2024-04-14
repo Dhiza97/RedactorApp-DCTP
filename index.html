@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDACTIFY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h2>REDACTIFY</h2>
+        <textarea id="original-text" cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+
+        <input type="text" id="wordsToRedact" placeholder="Words to redact (separated by space)" required>
+
+        <input type="text" id="replacementText" placeholder="Replacement text (default is ****)" required>
+
+        <div class="btns">
+            <button class="start" onclick="redactText()">Redact Now</button>
+
+            <button class="reset" onclick="resetFields()">Reset</button>
+        </div>
+
+        <h3>Redacted Text Statistics</h3>
+        <div id="redactedOutput"></div>
+        <div id="stats"></div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
