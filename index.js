@@ -44,7 +44,7 @@ function redactText() {
     // Display the redacted text in the output div
     document.getElementById('redactedOutput').innerText = redactedText
 
-    // Generate statistics
+    // Statistics
     const stats = `
         Words Scanned: ${wordsScanned}
         Matched Words: ${matchedWords}
